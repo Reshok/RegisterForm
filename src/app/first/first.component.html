@@ -1,0 +1,149 @@
+    <!--About Us-->>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6"align="center"style="margin-top:20%">
+      <mat-icon style="transform:rotate(90deg);">send</mat-icon>
+        <h2>Join us</h2>
+          <p>Thanks for Your Registered and Welcome</p>
+            <button class="btn btn-success"styalign="center">About us</button>
+</div>
+
+  <!--Form Start-->
+<div class="col-md-6">
+  <div class="container1">
+   <form (ngSubmit)="openDialog()"class="form" [formGroup]="registerForm" >   
+ <h1>Register Form</h1>
+ 
+ <mat-form-field appearance="outline" class="form-field" >
+  <mat-label>Name</mat-label>
+  <input  matInput placeholder="Placeholder"type="text" id="name" formControlName="name" placeholder="Name" autocomplete="off" required >
+  <!--<mat-icon matSuffix>sentiment_very_satisfied</mat-icon>--> 
+</mat-form-field> <br><br>
+  <mat-error *ngIf="name.invalid && (name.dirty || name.touched)" class="alert">
+  <mat-error class="error" *ngIf="name.errors?.['required']">*Name is required.</mat-error>
+  <mat-error class="error" *ngIf="name.errors?.['pattern']">*Enter only characters.</mat-error></mat-error>
+
+
+
+  <mat-form-field appearance="outline" class="form-field">
+   <mat-label>UserName</mat-label>
+   <input matInput placeholder="Placeholder"type="text" id="uname" formControlName="uname" placeholder="UserName" autocomplete="off" required >
+  <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>-->
+  </mat-form-field><br><br>
+  <mat-error *ngIf="uname.invalid && (uname.dirty || uname.touched)" class="alert">
+    <mat-error class="error" *ngIf="uname.errors?.['required']">*UserName is required.</mat-error>
+    <mat-error class="error" *ngIf="uname.errors?.['pattern']">*Enter only characters.</mat-error></mat-error>
+  
+
+ 
+  <mat-form-field appearance="outline" class="form-field">
+   <mat-label>Email</mat-label>
+   <input matInput placeholder="Placeholder"type="text" id="email" formControlName="email" placeholder="Email" autocomplete="off" required >
+  <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>-->
+  </mat-form-field> <br><br>
+  <mat-error *ngIf="email.invalid && (email.dirty || email.touched)" class="alert">
+    <mat-error class="error" *ngIf="email.errors?.['required']">*Email is required.</mat-error>
+    <mat-error class="error" *ngIf="email.errors?.['email']">*Enter Valid Email Id.</mat-error></mat-error>
+ 
+
+ 
+  <mat-form-field appearance="outline" class="form-field">
+   <mat-label>Password</mat-label>
+   <input matInput placeholder="Placeholder"type="text" id="pass" formControlName="pass" placeholder="Password" autocomplete="off" required >
+   <!--<mat-icon matSuffix>sentiment_very_satisfied</mat-icon>-->
+  </mat-form-field>  <br><br>
+  <mat-error *ngIf="pass.invalid && (pass.dirty || pass.touched)" class="alert">
+    <mat-error class="error" *ngIf="pass.errors?.['required']">*Password is required.</mat-error>
+    <mat-error class="error" *ngIf="pass.errors?.['pattern']">*Enter Valid Password.</mat-error></mat-error>
+
+  
+
+       <!--Button Field-->
+      <button type="submit" class="btn btn-success"style=" background-color:rgb(240, 106, 16);float: right;"
+       [disabled]="!registerForm.valid">Register</button><br><br>
+    
+ </form>
+</div></div></div></div>
+
+
+
+
+
+
+
+
+
+
+ <!--Name Field-->
+  <!-- <div class="form-group">
+    <input matInput type="text" id="name"formControlName="name"placeholder="Name"[(ngModel)]="name" autocomplete="off" required> [(ngModel)]="name"
+      <span class="error" *ngIf="registerForm.controls['name'].invalid && (registerForm.controls['name'].dirty || registerForm.controls['name'].touched)" >
+        <span class="error" *ngIf="registerForm.controls['name'].errors.required"> *Name is required.</span>
+          <span class="error" *ngIf="registerForm.controls['name'].errors.pattern">*Enter only characters.</span>
+      </span>
+ </div> -->
+
+
+<!-- <div class="form-group">
+    <input matInput type="text" id="name"formControlName="name"placeholder="Name"[(ngModel)]="name" autocomplete="off" required> [(ngModel)]="name"
+      <span class="error" *ngIf="registerForm.controls['name'].invalid && (registerForm.controls['name'].dirty || registerForm.controls['name'].touched)" >
+        <span class="error" *ngIf="registerForm.controls['name'].errors.required"> *Name is required.</span>
+          <span class="error" *ngIf="registerForm.controls['name'].errors.pattern">*Enter only characters.</span>
+      </span>
+ </div><br> -->
+       
+  <!--UserName Field-->
+    <!-- <div class="form-group">
+ <input  type="text" id="uname" name="uname" formControlName="uname"placeholder="UserName" autocomplete="off" required> formControlName="name"
+      <span class="error" *ngIf="registerForm.controls['uname'].invalid && (registerForm.controls['uname'].dirty || registerForm.controls['uname'].touched)">
+        <span class="error" *ngIf="registerForm.controls['uname'].errors.required">*UserName is required.</span> 
+           <span class="error" *ngIf="registerForm.controls['uname'].errors.pattern">*Enter valied UserName.</span>
+      </span>   
+ </div><br>-->
+
+   <!-- Email Field-->
+   <!--<div class="form-group">
+     <input  type="text" id="email" name="email" formControlName="email"placeholder="Email"[(ngModel)]="email" autocomplete="off" required>
+      <span class="error" *ngIf="registerForm.controls['email'].invalid && (registerForm.controls['email'].dirty || registerForm.controls['email'].touched)">
+        <span class="error" *ngIf="registerForm.controls['email'].errors.required"> *Email is required.</span> 
+          <span class="error" *ngIf="registerForm.controls['email'].errors.email">*Enter valied Email.</span>
+      </span>  
+  </div><br>-->
+
+      <!--Password Field-->
+   <!-- <div class="form-group">
+      <input type="text" id="pass"name="pass"formControlName="pass"placeholder="Password" autocomplete="off" required>
+        <span class="error" *ngIf="registerForm.controls['pass'].invalid && (registerForm.controls['pass'].dirty || registerForm.controls['pass'].touched)">
+          <span class="error" *ngIf="registerForm.controls['pass'].errors.required">*Password is required.</span> 
+            <span class="error" *ngIf="registerForm.controls['pass'].errors.pattern">*Enter valied Password.</span>
+        </span>
+    </div><br><br>-->
+
+
+
+
+
+
+<!--[disabled]="registerForm.controls['name'].invalid"-->
+
+
+<!--<h1>{{msg}}</h1>
+ 
+    <h3>Form Status</h3>
+    <b>valid : </b>{{registerForm.valid}}
+    <b>invalid : </b>{{registerForm.invalid}}
+    <b>touched : </b>{{registerForm.touched}}
+    <b>untouched : </b>{{registerForm.untouched}}
+    <b>pristine : </b>{{registerForm.pristine}}
+    <b>dirty : </b>{{registerForm.dirty}}
+    <b>disabled : </b>{{registerForm.disabled}}
+    <b>enabled : </b>{{registerForm.enabled}}
+
+  <div > 
+  <h3>Form Value</h3>
+    {{registerForm.value|json }}
+   
+  </div> -->
+  
+ 
+  

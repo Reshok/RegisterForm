@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;color: white; }
+button{
+    background-color: none;
+    border: none;
+    color: rgb(7, 6, 6);
+    float:center;
+  }
+  button:hover{
+    color: rgb(187, 255, 0);
+  }
+  .container{
+    max-width: 500px;
+    margin: auto;
+    background-color: rgb(195, 240, 240);
+    padding: 2% 2%;
+    }
+    .mat-grid-tile-content {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+  }

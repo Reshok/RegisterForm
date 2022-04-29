@@ -1,0 +1,48 @@
+
+
+
+
+
+<!--<h1 mat-dialog-title>Hi {{data.name}}</h1>-->
+<div class="container2">
+  
+    <div mat-card-avatar class="example-header-image"></div>
+  <mat-icon>message</mat-icon>
+  <h1 align="center">Thank You {{data.email}}</h1>
+<p align="center">Thanks for Your Registered and Welcome <b>{{data.name}}</b></p>
+
+<div mat-dialog-actions align="center">
+ <!-- <button mat-button (click)="onNoClick()">Cancel</button>-->
+  <button mat-button [mat-dialog-close]="data.name" cdkFocusInitial  (click)="view()">Back to site</button>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div [hidden]="!submitted" class="container">
+    <h2>You submitted the following:</h2>
+    <div class="row">
+      <div class="col-xs-3">Name</div>
+      <div class="col-xs-9">{{ name }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Email</div>
+      <div class="col-xs-9">{{ email }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Gender</div>
+      <div class="col-xs-9">{{ phone }}</div>
+    </div>
+    <br>
+    <button type="button" class="btn btn-primary" (click)="submitted=false">Thanks</button>
+  </div>-->
+ 

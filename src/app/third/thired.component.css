@@ -1,0 +1,357 @@
+mat-toolbar{
+  background-color: rgb(238, 238, 241);
+  color: rgb(12, 10, 10);
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+}
+.spacer {
+  flex: 1;
+}
+mat-sidenav{
+  margin: 0px;
+  width: 200px;
+  border-right: none;
+  background:rgb(231, 233, 233);
+  color: black;
+  border-radius: 0px;
+  padding: 16px;
+  text-align: center;
+  height: max-content;
+  position: fixed;
+    margin-top: 64px;
+}
+.menu-icone{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+}
+mat-button{
+  color: black;
+}
+.menu-button{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1rem;
+  background: none;
+  color: black;
+  border: none;
+}
+mat-icon{
+  color: rgb(13, 13, 14);
+  margin-right: 8px;
+}
+span{
+  color: rgb(10, 10, 10);
+}
+.mat-elevation-z1{
+  width: 44px;
+  margin-top: -12px;
+}
+.avatar{
+  vertical-align: middle;
+  margin-top: 2px;
+  width: 40px;
+  height: 34px;
+  border-radius: 50%;
+}
+.layout{
+  margin: 0px;
+}
+:host ::ng-deep .layout{
+  margin: 0px;
+  flex-flow: row wrap;
+    box-sizing: border-box;
+    display: flex;
+}
+.container{
+  max-width: 100%;
+  max-height: 100%;
+  background-color: aliceblue;
+}
+.button{
+  background: none;
+  color: green;
+  border: none;
+  margin-top: -20px;
+  float: right;
+}
+.mat-drawer.mat-drawer-side {
+  z-index: 2;
+  height: 100%;
+}
+.container1{
+  margin-top: -23px
+}
+.mat-elevation-z6 {
+  box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
+}
+.active{
+  color: blue;
+
+}
+:host ::ng-deep  .mat-icon{
+  float: right;
+}
+
+@media (max-width:700px){
+  :host ::ng-deep  .icon{
+    margin-left: 81x;
+
+
+  }
+}
+
+
+/* @media (max-width:768px){
+  .flex{
+    Flex:25%;
+    background-color: brown;
+  }
+} */
+
+
+
+/* mat-divider{
+  margin-top: 16px;
+  margin-top: 16px;
+
+} */
+
+
+/* .content{
+  height: calc(100vh - 98px);
+  margin: 16px;
+  margin-left: 32px;
+  
+  align-items: center;
+  border-radius: 10px;
+} */
+/* display: flex;
+  justify-content: center; */
+
+
+/* mat-drawer-container{
+  height: calc(100vh - 65px);
+}  */
+
+/* mat-form-field{
+  padding: 0 0.75em 0 0.75em;
+  margin-top: 0.75em;
+  position: relative;
+} */
+
+
+
+/* .example-card {
+  max-width: 400px;
+} */
+
+/* .example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+} */
+
+/* mat-grid-list{
+  padding: 55px;
+    margin: 8px;
+} */
+
+/* .container2{
+  padding: 0px;
+} */
+
+
+/* :host ::ng-deep .mat-drawer-content {
+   overflow: visible; 
+  
+} */
+/* .content2 {
+  padding: 16px;
+  height: 100%;
+  margin: 2px -88px -16px 5px;
+  width: fit-content; 
+} */
+.container-flude{
+  width: 100%;
+  /* margin: 1px -57px 5px 9px; */
+}
+
+/* .content2 > mat-card {
+  width: 200px;
+} */
+/* .mat-drawer-content {
+  overflow: visible;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/* how to override the meteriyal component styles */
+/* .spacer {
+  flex: 1;
+   padding: 210px;
+ }
+
+ :host {
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+   font-size: 14px;
+   color: #333;
+   box-sizing: border-box;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
+
+    .toolbar {
+      position: absolute;
+      top: 0;
+      left: 0px;
+      right: 0px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      background-color: #7b8188;
+      color: rgb(14, 10, 10);
+      font-weight: 600;
+    }
+    
+  
+    
+    .example-container {
+      width: 100%;
+      height: 100%;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    .example-sidenav{
+      background-color: rgb(142, 143, 143);
+      color: black;
+      padding: 80px;
+     
+    }
+
+
+.content {
+   height: calc(100vh - 98px);
+   border-radius: 10px;
+   margin: 16px;
+   margin-left: 32px;
+   margin-top: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   font-size: 2rem;
+   color: lightgray;
+}
+input {
+  border: none;
+  background: none;
+  padding: 0;
+  outline: none;
+  font: inherit;
+  text-align: center;
+  color: currentColor;
+}
+mat-drawer{
+  margin: 16px;
+  width: 200px;
+  border-right: none;
+  background:navy;
+  columns: white;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+
+}
+mat-drawer-container{
+  height: calc(100vh - 65px);
+} */
+
+
+/*mat-sidenav-container {
+   height: calc(100vh - 65px);
+}*/
+
+
+
+
+
+
+
+
+/*mat-toolbar {
+   background: #004a9f;
+   color: white;
+}*/
+
+/*mat-sidenav {
+   margin: 16px;
+   width: 200px;
+   border-right: none;
+   background: #002b5c;
+   color: white;
+   border-radius: 10px;
+   padding: 16px;
+   text-align: center;
+}*/
+
+
+
+
+/*.toolbar #youtube-logo {
+  height: 40px;
+  margin: 0 16px;
+  float: right;
+
+}
+
+.toolbar #twitter-logo:hover,
+.toolbar #youtube-logo:hover {
+  opacity: 0.8;
+  
+}*/
+
+/*.spacer {
+   flex: 1;
+ }
+
+    .toolbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      background-color: #1976d2;
+      color: white;
+      font-weight: 600;
+    }
+    
+  
+    .toolbar #youtube-logo {
+      height: 40px;
+      margin: 0 16px;
+      float: right;
+
+    }
+  
+    .toolbar #twitter-logo:hover,
+    .toolbar #youtube-logo:hover {
+      opacity: 0.8;
+      
+    }*/
+    
+  
