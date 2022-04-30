@@ -7,7 +7,10 @@ import { HttpClient } from '@angular/common/http';
 import { UserDataService } from './user-data.service';
 import { MatSidenav } from '@angular/material/sidenav';
 import { BreakPoint } from '@angular/flex-layout';
-import{ BreakpointObserver } from '@angular/cdk/layout'
+import{ BreakpointObserver } from '@angular/cdk/layout';
+import { Router } from '@angular/router';
+import { MatTableDataSource } from '@angular/material/table';
+
 @Component({
   selector: 'app-thired',
   templateUrl: './thired.component.html',
@@ -15,19 +18,25 @@ import{ BreakpointObserver } from '@angular/cdk/layout'
 })
 
 export class ThiredComponent implements OnInit {
+   displayedColumns: string[] = ['name', 'position', 'office','salary'];
+  // dataSource = ELEMENT_DATA;
+ 
+  User:any ;
+
+
 
   @ViewChild(MatSidenav)
   sidenav!:MatSidenav;
 
  
- 
+  selection:any
   userId:any
   title:undefined | any
   UserDataService:any
   imageSrc = 'assets/sundhar2.png'  
   imageAlt = 'iPhone'
   lis:any=[]; 
-  User: any;
+  // User: any;
   name:undefined|any;
   value:any 
   data:any
@@ -42,13 +51,14 @@ export class ThiredComponent implements OnInit {
   email:any
   thired:any
   observe:any
-
+  
+  
 
   static html({ html, arg1 }: { html: any; arg1: { width: string; data: { name: string; uname: String; email: string; pass: any; }; }; }): void {
     throw new Error('Method not implemented.');
   }
   constructor(private route: ActivatedRoute,private http:HttpClient, private UserData: UserDataService,
-    private observer: BreakpointObserver
+    private observer: BreakpointObserver,private router: Router
     // public id: number,
     // public firstname:string,
     // public lastname:string,
@@ -104,12 +114,22 @@ export class ThiredComponent implements OnInit {
   
 
 }
+// const ELEMENT_DATA: PeriodicElement [] = [
+//   {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
+//   {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
+// ];
 
 export interface DialogData {
   email: string;
   name: string|undefined;
   
 }
+// export interface PeriodicElement {
+//   name: string;
+//   position: number;
+//   weight: number;
+//   symbol: string;
+// }
 
 
 

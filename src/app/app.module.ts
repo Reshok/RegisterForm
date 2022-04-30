@@ -18,13 +18,16 @@ import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FourthComponent } from './fourth/fourth.component';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
     SecondComponent,
-    ThiredComponent
+    ThiredComponent,
+    FourthComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatIconModule,MatSidenavModule,MatIconModule,MatToolbarModule,
     ReactiveFormsModule,MatFormFieldModule,MatCardModule,MatInputModule,HttpClientModule,
     FormsModule,FlexLayoutModule,
-    NgbModule,
+    NgbModule,MatTableModule,
     
   
   ],
